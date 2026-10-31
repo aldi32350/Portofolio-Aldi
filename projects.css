@@ -1,0 +1,257 @@
+/* ============================================
+   PROJECTS PAGE — Detailed Case Study Styles
+   ============================================ */
+
+.projects-page {
+  padding-top: 64px; /* navbar height */
+}
+
+/* ---- Project Detail Section ---- */
+.project-detail {
+  padding: 80px 0;
+}
+
+.project-hero-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.project-hero-row.reverse {
+  direction: rtl;
+}
+.project-hero-row.reverse > * {
+  direction: ltr;
+}
+
+/* Category Label */
+.project-category {
+  display: inline-block;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+/* Project Heading */
+.project-heading {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 400;
+  line-height: 1.15;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.project-subtitle {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  margin-bottom: 32px;
+}
+
+/* Section Labels */
+.project-section {
+  margin-bottom: 28px;
+}
+
+.project-section-label {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.project-section p {
+  font-size: 0.925rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Bullet List */
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.project-list li::before {
+  content: '■';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-size: 0.55rem;
+  line-height: 1.65;
+  padding-top: 4px;
+}
+
+.project-list li strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.project-list li a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Career Relevance Box */
+.project-relevance {
+  border-left: 3px solid var(--accent);
+  padding-left: 20px;
+  margin: 28px 0;
+}
+
+.project-relevance p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* Dividers */
+.project-divider {
+  height: 1px;
+  background: var(--border);
+}
+
+.project-divider-thin {
+  height: 1px;
+  background: var(--border);
+  margin: 28px 0 20px;
+}
+
+/* Meta Row */
+.project-meta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-meta {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.meta-label {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  min-width: 80px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.meta-value {
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.meta-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.meta-tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: all 0.2s;
+}
+
+.meta-tag:hover {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  border-color: var(--bg-dark);
+}
+
+/* Hero Image */
+.project-hero-image {
+  position: sticky;
+  top: 100px;
+}
+
+.project-hero-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Active nav link */
+.active-link {
+  color: var(--text-primary) !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Back Section */
+.back-section {
+  padding: 60px 0 80px;
+  text-align: center;
+}
+
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .project-hero-row,
+  .project-hero-row.reverse {
+    grid-template-columns: 1fr;
+    direction: ltr;
+    gap: 32px;
+  }
+
+  .project-hero-image {
+    position: relative;
+    top: 0;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-detail {
+    padding: 48px 0;
+  }
+
+  .project-heading {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .project-meta {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .meta-label {
+    min-width: auto;
+  }
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhamad Aldi Wiyono — Digital Marketing & Web Developer Portfolio</title>
+  <meta name="description" content="Portofolio resmi Muhamad Aldi Wiyono - Kepala Divisi Digital Marketing di Masjid Muslim Billionaire, Bogor. Berpengalaman dalam Meta Ads, Google Ads, Content Strategy, dan Web Development.">
+  <meta name="keywords" content="Muhamad Aldi Wiyono, Digital Marketing, Masjid Muslim Billionaire, Meta Ads, Google Ads, Web Developer">
+  <meta name="author" content="Muhamad Aldi Wiyono">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Muhamad Aldi Wiyono — Digital Marketing & Web Developer Portfolio">
+  <meta property="og:description" content="Kepala Divisi Digital Marketing di Masjid Muslim Billionaire, Bogor.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo_aldi.jpg">
+
+  <!-- Google Fonts: DM Sans + DM Serif Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header class="site-header" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Beranda">
+        <span class="nav-brand-box">AW</span>
+        <span class="nav-brand-name">Muhamad Aldi Wiyono</span>
+      </a>
+      <nav class="nav-links" aria-label="Navigasi Utama">
+        <a href="#proyek" class="nav-link">Proyek</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+      <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Buka Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <a href="#hero" class="mobile-link">Beranda</a>
+      <a href="#tentang" class="mobile-link">Tentang</a>
+      <a href="#keahlian" class="mobile-link">Keahlian</a>
+      <a href="#pengalaman" class="mobile-link">Pengalaman</a>
+      <a href="#proyek" class="mobile-link">Proyek</a>
+      <a href="#kontak" class="mobile-link">Kontak</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="hero-title-sans">MUHAMAD ALDI</span>
+            <span class="hero-title-serif">Wiyono.<span class="accent-square"></span></span>
+          </h1>
+        </div>
+        <div class="hero-image">
+          <div class="hero-image-card">
+            <img src="aldi_profile.jpg" alt="Foto Muhamad Aldi Wiyono" loading="eager">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROFILE + AT A GLANCE ========== -->
+    <section id="tentang" class="profile-section">
+      <div class="container">
+        <div class="profile-grid">
+          <!-- Left: Bio Text -->
+          <div class="profile-bio">
+            <p class="bio-text">
+              Saya <em>Muhamad Aldi Wiyono</em>, saat ini menjabat sebagai <strong>Kepala Divisi Digital Marketing</strong> di <em>Masjid Muslim Billionaire, Bogor</em>. Memimpin strategi konten, periklanan digital (<strong>Meta Ads &amp; Google Ads</strong>), dan pengembangan web untuk menyebarkan dakwah serta program kebaikan masjid ke audiens yang lebih luas.
+            </p>
+            <div class="bio-buttons">
+              <a href="#proyek" class="btn-primary">
+                Lihat Proyek <span class="arrow">→</span>
+              </a>
+              <a href="#kontak" class="btn-outline">Hubungi Saya</a>
+            </div>
+          </div>
+          <!-- Right: At a Glance Card -->
+          <div class="glance-card">
+            <h3 class="glance-title">Sekilas Info</h3>
+            <div class="glance-item">
+              <span class="glance-label">Posisi</span>
+              <span class="glance-value">Kepala Divisi Digital Marketing</span>
+            </div>
+            <div class="glance-divider"></div>
+            <div class="glance-item">
+              <span class="glance-label">Tempat</span>
+              <span class="glance-value">Masjid Muslim Billionaire, Bogor</span>
+            </div>
+            <div class="glance-divider"></div>
+            <div class="glance-item">
+              <span class="glance-label">Pengalaman</span>
+              <span class="glance-value">3+ Tahun (2022 – Sekarang)</span>
+            </div>
+            <div class="glance-divider"></div>
+            <div class="glance-item">
+              <span class="glance-label">Pendidikan</span>
+              <span class="glance-value">Pondok CEO Bogor · STMIK Pringsewu</span>
+            </div>
+            <div class="glance-divider"></div>
+            <div class="glance-item">
+              <span class="glance-label">Lokasi</span>
+              <span class="glance-value">Bogor, Jawa Barat, Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TICKER RIBBON ========== -->
+    <div class="ticker-ribbon" aria-hidden="true">
+      <div class="ticker-track">
+        <span class="ticker-item">DIGITAL MARKETING</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">META ADS</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">GOOGLE ADS</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">CONTENT STRATEGY</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">WEB DEVELOPMENT</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">COPYWRITING</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">VIDEO EDITING</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">CAMPAIGN OPTIMIZATION</span>
+        <span class="ticker-dot"></span>
+        <!-- Duplicate for seamless loop -->
+        <span class="ticker-item">DIGITAL MARKETING</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">META ADS</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">GOOGLE ADS</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">CONTENT STRATEGY</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">WEB DEVELOPMENT</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">COPYWRITING</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">VIDEO EDITING</span>
+        <span class="ticker-dot"></span>
+        <span class="ticker-item">CAMPAIGN OPTIMIZATION</span>
+        <span class="ticker-dot"></span>
+      </div>
+    </div>
+
+    <!-- ========== EXPERTISE & STATISTICS ========== -->
+    <section id="keahlian" class="expertise-section">
+      <div class="container">
+        <!-- Three Column Summary -->
+        <div class="expertise-columns">
+          <div class="expertise-col">
+            <h3 class="expertise-col-title">Digital Marketing Lead</h3>
+            <p>Memimpin strategi periklanan digital (Meta Ads & Google Ads) untuk program dakwah dan kebaikan masjid. Sukses menghimpun donasi lebih dari Rp 2,2 Miliar.</p>
+          </div>
+          <div class="expertise-col">
+            <h3 class="expertise-col-title">Web Developer</h3>
+            <p>Membangun website resmi <a href="https://masjidmuslimbillionaire.com" target="_blank" rel="noopener noreferrer">masjidmuslimbillionaire.com</a> dari nol. Load time < 1 detik, 100% mobile-friendly, dan diakses ribuan jamaah.</p>
+          </div>
+          <div class="expertise-col">
+            <h3 class="expertise-col-title">Content Creator</h3>
+            <p>Menyusun strategi konten, memproduksi video Reels/TikTok di CapCut, mendesain poster di Canva, dan menulis copywriting dakwah yang santai dan inspiratif.</p>
+          </div>
+        </div>
+
+        <!-- Stats Bar -->
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-number">Rp 2,2M+</span>
+            <span class="stat-label">Total Donasi Terhimpun</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">35K+</span>
+            <span class="stat-label">Transaksi Donasi</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">56,8%</span>
+            <span class="stat-label">Tingkat Konversi</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Tahun Pengalaman</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROFESSIONAL EXPERIENCE ========== -->
+    <section id="pengalaman" class="experience-section">
+      <div class="container">
+        <div class="section-header-row">
+          <h2 class="section-label">PENGALAMAN KERJA</h2>
+        </div>
+
+        <!-- Experience Card 1 -->
+        <div class="exp-card">
+          <div class="exp-card-image">
+            <img src="bukti_website_masjid.png" alt="Website Masjid Muslim Billionaire" loading="lazy">
+          </div>
+          <div class="exp-card-content">
+            <span class="exp-period">2024 – Sekarang</span>
+            <h3 class="exp-title">Kepala Divisi Digital Marketing</h3>
+            <p class="exp-company"><em>Masjid Muslim Billionaire, Bogor</em></p>
+            <p class="exp-desc">
+              Memimpin arah dan strategi promosi digital masjid secara menyeluruh. Merancang kampanye iklan berbayar (Meta Ads & Google Ads) untuk kajian akbar dan program wakaf. Membangun website resmi masjidmuslimbillionaire.com dari nol. Sukses menghimpun donasi lebih dari Rp 2,2 Miliar dari 35.035 transaksi donatur.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Meta Ads</span>
+              <span class="tag">Google Ads</span>
+              <span class="tag">Web Development</span>
+              <span class="tag">Strategi Konten</span>
+              <span class="tag">Landing Page</span>
+              <span class="tag">Donasi Rp 2,2M+</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Card 2 -->
+        <div class="exp-card reverse">
+          <div class="exp-card-image">
+            <img src="bukti_instagram_mmb.png" alt="Instagram Masjid Muslim Billionaire" loading="lazy">
+          </div>
+          <div class="exp-card-content">
+            <span class="exp-period">2022 – 2024</span>
+            <h3 class="exp-title">Santri On Duty / Staf Digital Marketing</h3>
+            <p class="exp-company"><em>Masjid Muslim Billionaire, Bogor</em></p>
+            <p class="exp-desc">
+              Mengelola kegiatan harian media sosial masjid. Memproduksi video pendek (Reels/TikTok) dan materi grafis promosi. Menjalankan iklan digital pertama untuk memperluas jangkauan kegiatan masjid ke puluhan ribu masyarakat Bogor dan sekitarnya.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Instagram</span>
+              <span class="tag">TikTok</span>
+              <span class="tag">CapCut</span>
+              <span class="tag">Canva</span>
+              <span class="tag">Video Reels</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Summary -->
+        <div class="section-header-row" style="margin-top: 80px;">
+          <h2 class="section-label">RIWAYAT PENDIDIKAN</h2>
+        </div>
+        <div class="education-grid">
+          <div class="edu-card">
+            <span class="edu-year">2021 – Sekarang</span>
+            <h4 class="edu-name">Pondok CEO Bogor</h4>
+            <p>Pendidikan karakter, kepemimpinan & praktik bisnis digital langsung di dunia nyata.</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-year">2019 – 2021</span>
+            <h4 class="edu-name">STMIK Pringsewu, Lampung</h4>
+            <p>Ilmu komputer hingga semester 3 — dasar pemrograman, algoritma, dan web development.</p>
+          </div>
+          <div class="edu-card">
+            <span class="edu-year">2017 – 2019</span>
+            <h4 class="edu-name">MA Muhammadiyah Kalirejo</h4>
+            <p>Lampung Tengah — Jurusan IPA. Aktif organisasi kesiswaan dan pembinaan keislaman.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS / STUDY CASES ========== -->
+    <section id="proyek" class="projects-section">
+      <div class="container">
+        <div class="section-header-row">
+          <h2 class="section-label">PROYEK PILIHAN</h2>
+          <p class="section-subtitle">Kampanye iklan, website, dan konten yang pernah saya kerjakan langsung di lapangan.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <a href="projects.html#kampanye-donasi" class="project-card">
+            <div class="project-thumb">
+              <img src="pencapaian_ads_dashboard.png" alt="Dashboard Iklan Donasi Rp 2,2 Miliar" loading="lazy">
+            </div>
+            <div class="project-info">
+              <span class="project-year">2024</span>
+              <h3 class="project-title">KAMPANYE DONASI RP 2,2 MILIAR</h3>
+              <p class="project-role">Lead Digital Ads Strategy & Conversion</p>
+            </div>
+          </a>
+
+          <!-- Project 2 -->
+          <a href="projects.html#dashboard-system" class="project-card">
+            <div class="project-thumb">
+              <img src="bukti_system_management.png" alt="Sistem Manajemen Dashboard" loading="lazy">
+            </div>
+            <div class="project-info">
+              <span class="project-year">2024</span>
+              <h3 class="project-title">SISTEM MANAJEMEN DASHBOARD</h3>
+              <p class="project-role">Digital Marketing System Architect</p>
+            </div>
+          </a>
+
+          <!-- Project 3 -->
+          <a href="projects.html#website-masjid" class="project-card">
+            <div class="project-thumb">
+              <img src="bukti_website_masjid.png" alt="Website Masjid Muslim Billionaire" loading="lazy">
+            </div>
+            <div class="project-info">
+              <span class="project-year">2024</span>
+              <h3 class="project-title">WEBSITE MASJID MUSLIM BILLIONAIRE</h3>
+              <p class="project-role">Web Developer — UI/UX & Frontend</p>
+            </div>
+          </a>
+
+          <!-- Project 4 -->
+          <a href="projects.html#konten-instagram" class="project-card">
+            <div class="project-thumb">
+              <img src="bukti_instagram_mmb.png" alt="Konten Instagram Masjid" loading="lazy">
+            </div>
+            <div class="project-info">
+              <span class="project-year">2023</span>
+              <h3 class="project-title">KONTEN INSTAGRAM & REELS</h3>
+              <p class="project-role">Content Creator & Video Editor</p>
+            </div>
+          </a>
+
+          <!-- Project 5 -->
+          <a href="projects.html#youtube-dakwah" class="project-card">
+            <div class="project-thumb">
+              <img src="bukti_youtube_mmb.png" alt="Konten YouTube Masjid" loading="lazy">
+            </div>
+            <div class="project-info">
+              <span class="project-year">2023</span>
+              <h3 class="project-title">KONTEN YOUTUBE DAKWAH</h3>
+              <p class="project-role">Video Producer & Channel Manager</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TOOLS ========== -->
+    <section class="tools-section">
+      <div class="container">
+        <div class="section-header-row">
+          <h2 class="section-label">TOOLS & ALAT KERJA</h2>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-chip">Meta Ads</div>
+          <div class="tool-chip">Google Ads</div>
+          <div class="tool-chip">Instagram</div>
+          <div class="tool-chip">TikTok</div>
+          <div class="tool-chip">Canva Pro</div>
+          <div class="tool-chip">CapCut</div>
+          <div class="tool-chip">ChatGPT</div>
+          <div class="tool-chip">Claude AI</div>
+          <div class="tool-chip">Gemini AI</div>
+          <div class="tool-chip">HTML & CSS</div>
+          <div class="tool-chip">JavaScript</div>
+          <div class="tool-chip">WhatsApp API</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== CONTACT & FOOTER ========== -->
+  <footer id="kontak" class="contact-footer">
+    <div class="container">
+      <div class="contact-content">
+        <span class="contact-overline">TERBUKA UNTUK KOLABORASI</span>
+        <h2 class="contact-headline">HUBUNGI SAYA <span class="arrow-up">↗</span></h2>
+        <div class="contact-links">
+          <a href="mailto:aldi32350@gmail.com" class="contact-link">Email</a>
+          <a href="https://wa.me/6281212496362" target="_blank" rel="noopener noreferrer" class="contact-link">WhatsApp</a>
+          <a href="tel:+6281212496362" class="contact-link">Telepon</a>
+          <a href="https://www.instagram.com/aldi.wiyono/" target="_blank" rel="noopener noreferrer" class="contact-link">Instagram</a>
+          <a href="https://masjidmuslimbillionaire.com" target="_blank" rel="noopener noreferrer" class="contact-link">Website</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 MUHAMAD ALDI WIYONO</span>
+        <span class="footer-location">BOGOR, JAWA BARAT, INDONESIA</span>
+        <span class="footer-rights">ALL RIGHTS RESERVED</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
